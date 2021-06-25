@@ -1,0 +1,5 @@
+@include('newtemplates.front_partials.head')
+@include('newtemplates.front_partials.header')
+@yield('content')
+@include('newtemplates.front_partials.footer')
+@yield('jsOutside')

@@ -1,0 +1,1183 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px !important;
+}
+p{
+    margin:0 !important;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none;
+    color: #FF6600 !important;
+}
+body{
+    color: #232426;
+    font-size: 0.875rem !important;
+    font-display: swap;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif !important;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+p{
+    margin-bottom: 0px;
+}
+/*Utilities*/
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0.2rem rgb(255 102 0);
+}
+.w-80{
+    width: 80% !important;
+}
+.w-70{
+    width: 70% !important;
+}
+.w-45{
+    width: 45% !important;
+}
+.w-40{
+    width: 40% !important;
+}
+.w-35{
+    width: 35% !important;
+}
+.w-15{
+    width: 15% !important;
+}
+.bg-black{
+    background-color: #000000;
+}
+.font_22{
+    font-size: 22px;
+}
+.color-black{
+    color: #000000
+}
+.cursor-pointer{
+    cursor: pointer !important;
+}
+.rounded-pill{
+    border-radius: 50rem!important;
+}
+.b-r{
+    border-right: 3px solid #000000 !important;
+}
+/* custom radio buttons*/
+
+.custom_radio {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Hide the browser's default radio button */
+.custom_radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+/* On mouse-over, add a grey background color */
+.custom_radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom_radio input:checked ~ .checkmark {
+    background-color: transparent;
+    border:1px solid #ff6600;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom_radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom_radio .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff6600;
+}
+
+/* End custom radio buttons*/
+/*Header*/
+.headSearch{
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: 3px solid #000000 !important;
+    padding: 12px 25px !important;
+}
+.searhIcon{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: #ff6600;
+    padding: 12px;
+    border-radius: 50%;
+    z-index: 99;
+}
+.user_main{
+    width: 7%;
+    background: #fff;
+    border-radius: 34px;
+    text-align: center;
+}
+.user_dropdown{
+    font-size: 30px;
+}
+.menuIcon{
+    font-size: 20px !important;
+}
+/*Header*/
+
+.text_25{
+    font-size: 25px !important;
+}
+.text_20{
+    font-size: 20px !important;
+}
+.text_17{
+    font-size: 17px !important;
+}
+.text_15{
+    font-size: 15px !important;
+}
+/*Utilities*/
+.theme_color{
+    color: #ff6600 !important;
+}
+.text_black{
+    color: #000000 !important;
+}
+.user_main .dropdown-toggle::after{
+    display: none !important;
+}
+.form-control:focus{
+    border-color: #000000 !important;
+    box-shadow: none !important;
+}
+/* Index Css*/
+.arrowleft i{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.banner_text h1{
+    font-size: 55px;
+}
+.banner_text p{
+    font-size: 35px;
+}
+.btn-secondary{
+    background-color: #ff6600 !important;
+    border-color: #ff6600 !important;
+}
+.slick-slide{
+    margin-right: 20px;
+}
+.instrument-main .slick-prev, .language-main .slick-prev, .school-main .slick-prev {
+    left: 5px !important;
+}
+.instrument-main .slick-next, .language-main .slick-next, .school-main .slick-next{
+    right: 10px;
+}
+/*Slider*/
+.instrument-main .slick-next:before , .language-main .slick-next:before, .school-main .slick-next:before, .tutor-experience-main .slick-next:before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f105";
+    font-size: 40px !important;
+    color: #000 !important;
+}
+.instrument-main .slick-prev:before , .language-main .slick-prev:before, .school-main .slick-prev:before, .tutor-experience-main .slick-prev:before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f104";
+    font-size: 40px !important;
+    color: #000 !important;
+}
+.instrument-main .slick-next, .instrument-main .slick-prev, .language-main .slick-next, .language-main .slick-prev, .school-main .slick-next, .school-main .slick-prev{
+    background-color: #fff !important;
+}
+.instrument-main .slick-prev,.instrument-main .slick-next, .language-main .slick-prev,.language-main .slick-next, .school-main .slick-prev,.school-main .slick-next{
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+}
+.slider_innerImg img{
+    border-radius: 10px;
+    min-height: 140px;
+}
+.slider_innerImg span{
+    background: hsl(0deg 0% 0% / 64%);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 20px;
+    position: absolute;
+    right: 50px;
+    bottom: 5px;
+}
+.slider_innerImg p{
+    width: 50%;
+}
+.stars li{
+    float: left;
+}
+.stars li a i{
+    color: #ffd503;
+    margin-right: 0px;
+    font-size: 12px;
+}
+.name_detials p{
+    font-size: 12px;
+    margin-right: 8px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+.course_detail span{
+    font-size: 13px;
+    margin-left: 5px;
+}
+.tutorSlider span{
+    right: 100px ;
+    bottom: 50px ;
+    background-color: #ff6600;
+    padding: 5px 35px;
+    border-radius: 5px;
+}
+.tutor-main .slick-prev, .tutor-main .slick-next{
+    display: none;
+}
+.tutorImgInner{
+    width: 11% !important;
+    display: block !important;
+    margin: 40px auto;
+}
+.tutorImgInner img{
+    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+}
+.tutor-experience-main .slick-prev{
+    top: 35%;
+    left: 250px;
+    z-index: 9
+}
+.tutor-experience-main .slick-next{
+    top: 35%;
+    right: 250px;
+}
+/*Slider*/
+
+/* Index Css*/
+
+
+/*My Tutor Page Css*/
+.tutor_banner{
+    background-image: url('../images/tutor_banner2.png');
+    min-height: 630px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner_overlay{
+    background: rgb(0 0 0 / 16%);
+    overflow: hidden;
+    height: 100%;
+    min-height: 630px;
+    z-index: 2;
+}
+.tutor_banner_text h1{
+    color: #FF6600;
+    font-size: 89px;
+    letter-spacing: 10px;
+}
+.tutor_banner_text p{
+    font-size: 40px;
+}
+.banner_btn{
+    margin-top: 6rem;
+}
+.banner_btn a{
+    background: #FF6600;
+    padding: 6px 40px;
+    border-radius: 10px;
+    color: #fff !important;
+    font-size: 22px;
+}
+.ask_question h1{
+    font-size: 70px;
+}
+.tutor_form .form-control{
+    border: 1px solid #000000;
+}
+.tutor_form .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: black;
+    outline: 0;
+    box-shadow: none;
+}
+.tutor_form label, .tutor_form input .tutor_form textarea{
+    font-size: 20px;
+}
+.submit_question{
+    background: #FF6600;
+    color: #fff !important;
+    padding: 8px 30px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 50%)
+}
+.submit_question:hover, .upload_homeworkbtn:hover{
+    color: #fff !important;
+}
+.main_row{
+    margin-bottom: 10rem;
+}
+.tutor_contact p{
+    color: #646464;
+    font-size: 28px;
+}
+.upload_homework{
+    height: 150px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+.upload_homeworkbtn{
+    background-color: #FF6600;
+    color: #fff;
+    padding: 6px 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 2px rgb(0 0 0 / 50%)
+}
+.homework_submit{
+    border-radius: 10px;
+}
+/*My Tutor Page Css*/
+
+/*QA Tutor page Css*/
+.qabtn{
+    float: right !important;
+    width: auto !important;
+}
+/*QA Tutor page Css*/
+
+/*Student Message page Css*/
+.child_menu{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    position: absolute;
+    bottom: -50px;
+    left: 250px;
+    background: #fff;
+    padding: 20px;
+    z-index: 9;
+    border-radius: 50px;
+    box-shadow: 0px 4px 2px rgb(0 0 0 / 50%);
+}
+.child_menu_list li{
+    float: left;
+    width: 25%;
+}
+.content_main{
+    margin-top: 6rem;
+}
+.search_dropdown .form-control:focus{
+    border-color: #ced4da;
+    box-shadow: none;
+}
+.search_dropdown .dropdown-menu{
+    min-width: 19rem;
+}
+.message_search_main{
+    border: 1px solid #ced4da;
+    min-height: 520px;
+}
+.search_dropdown input{
+    padding: 20px 30px 20px 15px !important;
+}
+.input_search_icon{
+    position: absolute;
+    top: 23px;
+    right: 15px;
+}
+.message_dropdown a:hover{
+    background-color: #E5E5E5;
+}
+.message_dropdown a{
+    font-size: 22px;
+    border-bottom:1px solid #cecece;
+}
+.message_dropdown a p{
+    font-size: 15px;
+    margin: 0px !important;
+}
+.message_dropdown {
+    max-height: 445px;
+    background: #ffffff;
+    overflow-y: scroll;
+}
+.message_tabinner::-webkit-scrollbar , .message_dropdown::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.message_tabinner::-webkit-scrollbar-track ,.message_dropdown::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+.message_tabinner::-webkit-scrollbar-thumb , .message_dropdown::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+/* Handle on hover */
+.message_tabinner:hover::-webkit-scrollbar-thumb , .message_dropdown:hover::-webkit-scrollbar-thumb {
+  background: #ff6600; 
+}
+.online_symbol:after{
+    position: absolute;
+    top: 12px;
+    left: -15px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #10D50A;
+    border-radius: 50px;
+}
+.message_inner span{
+    font-size: 22px;
+}
+.message_inner p{
+    font-size: 15px;
+}
+.message_inner{
+    border: 1px solid #ced4da;
+    padding: 5px 30px;
+}
+.display_chat {
+    min-height: 400px;
+}
+.display_chat p{
+    font-size: 20px;
+}
+.chat_input input{
+    padding: 10px 20px;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 63%);
+}
+.chat_input .form-control:focus{
+    border-color: #ced4da !important;
+    box-shadow: none;
+}
+.smileys_group .dropdown-toggle::after{
+    display: none;
+}
+.smileys_group .dropdown-menu{
+    min-width: 20rem !important;
+}
+.smileys_list li{
+    float: left;
+    line-height: 30px;
+}
+.other_chatIcons span a{
+    color: #bfbfbf;
+}
+.order_btn{
+    border: 1px solid #c5c5c5;
+    padding: 5px 30px;
+    margin-left: 20px;
+    font-size: 22px;
+    color: #FF6600;
+}
+.order_btn:hover{
+    color: #FF6600;
+}
+.about_main{
+    border: 1px solid #ced4da;
+    min-height: 520px;
+}
+.about_main h3{
+    font-size: 25px;
+}
+.messageUser_name{
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+}
+.messageUser_name h4{
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    background: #ececec;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 47px;
+    line-height: 8rem;
+}
+.offer_modalInput_main input{
+    padding: 10px !important;
+}
+.offer_modalInput_main .input_search_icon{
+    top: 15px;
+}
+.offerBtn {
+    background-color: #ff6600;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+.offerBtn:hover, .btn_group a:hover{
+    color: #fff !important;
+}
+.btn_group a{
+    background-color: #ff6600;
+    color: #fff;
+    padding: 6px 20px;
+    display: inline-block;
+    border-radius: 50px;
+}
+/*Select a Course Moadl Css*/
+@media (min-width: 576px){
+#place_order_modal .modal-dialog, #course_formModal .modal-dialog, #tutor_order .modal-dialog {
+    max-width: 828px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    }
+}
+#place_order_modal .modal-header, #course_formModal .modal-header, #tutor_order .modal-header{
+    background-color: #FF6600;
+}
+.modal-title{
+    font-size: 25px;
+}
+.course_dec{
+    font-size: 20px;
+}
+.nav_dropdown .dropdown-toggle::after{
+    display: none;
+}
+.nav_dropdown .dropdown-menu{
+    min-width: 25rem;
+    top: 55px !important;
+    left: -100px !important;
+}
+.nav_dropdown .custom_dropdown::before {
+    border-bottom: 30px solid rgba(0, 0, 0, 0.2);
+    border-left: 15px solid rgba(0, 0, 0, 0);
+    border-right: 15px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 45%;
+    position: absolute;
+    top: -30px;
+}
+.nav_dropdown .custom_dropdown::after{
+    border-bottom: 30px solid rgb(255 255 255);
+    border-left: 12px solid rgba(0, 0, 0, 0);
+    border-right: 12px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 182px;
+    position: absolute;
+    top: -28px;
+}
+/*Select a Course Moadl Css*/
+
+/*custom popup*/
+.custom_dropdown{
+    position: absolute;
+    top: 85px ;
+    left: -100px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 25rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 50%);
+}
+/*.custom_dropdown .all_notificaiton{
+    position: absolute;
+    bottom: 10px;
+    right: 125px;
+}*/
+.message_tabinner{
+    height: 450px;
+    overflow-y: scroll;
+}
+.message_tabs .nav-fill .nav-item{
+    width: 50%;
+}
+.message_tabs .nav-tabs .nav-link{
+    border-right: 1px solid #dee2e6 !important;
+}
+.message_tabs .nav-tabs .nav-link.active{
+    border-color: #ffffff #dee2e6 #dee2e6  #ffffff!important
+}
+.message_tabs .nav-tabs .nav-item.show .nav-link, .message_tabs .nav-tabs .nav-link.active {
+    color: #ff6600 !important;
+}
+.message_tabs .nav-tabs .nav-link:focus, .message_tabs .nav-tabs .nav-link:hover{
+    border-color: #ffffff #e9ecef #dee2e6 !important;
+}
+/*custom popup*/
+.notification_img img{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+.from_notification img{
+    width: 30px;
+}
+/*End Student Message page Css*/
+
+
+/*Tutor Message page Css*/
+.course_info{
+    line-height: 40px;
+}
+.colored_box{
+    border-radius: 22px !important;
+    border-color: #ff6600 !important;
+}
+
+/*End TutorMessage page Css*/
+
+/* Tutor Profile page code*/
+
+.profile-section {
+    border: 2px solid #8080808a;
+    border-radius: 30px;
+}
+.user_status {
+    border-radius: 50px;
+    border: 2px solid #00FF77;
+}
+.text-green {
+    color: #00FF77;
+}
+.user_image {
+    border-radius: 50%;
+}
+.bg_lightgray {
+    background-color: #6c757d1a;
+}
+.text_orange {
+    color: #FF6600;
+}
+.icon_text {
+    color: #8a8888;
+    margin-left: 1px;
+}
+.bg_orange {
+    background-color: #FF6600;
+}
+.tutor_name{
+    font-size: 29px;
+}
+.about_tutor{
+    font-size: 15px;
+}
+.tutor_profileOrder .modal-dialog{
+    margin-top: 0px !important;
+}
+/* Tutor Profile page code*/
+
+/* Start Tutor Courses*/
+
+
+.user_image{
+
+    border-radius: 50%;
+}
+
+.profile-section{
+
+    border: 2px solid #8080808a;
+    border-radius: 30px;
+}
+
+.text-green{
+
+    color: #00FF77;
+}
+
+.fa-circle:before{
+    
+    font-size: 7px !important;
+    position: relative;
+    bottom: 1px;
+}
+.user_status{
+
+    border-radius: 50px;
+    border:2px solid #00FF77;
+}
+.bg_lightgray{
+
+    background-color: #6c757d1a;
+}
+.text_orange{
+
+    color: #FF6600;
+}
+.bg_orange{
+
+    background-color: #FF6600;
+}
+.bg_green{
+
+    background-color: #2dd393;
+}
+.fa-map-marker:before{
+
+    font-size: 14px;
+    color: #FF6600;
+    margin-right: 2px;
+}
+.fa-mouse-pointer:before{
+    
+    font-size: 14px;
+    color: #FF6600;
+    margin-right: 2px;
+}
+.fa-shopping-cart:before{
+    
+    font-size: 14px;
+    color:#FF6600;
+    margin-right: 2px;
+
+}
+.icon_text{
+
+    color: #8a8888;
+    margin-left: 1px;
+}
+.courses_section{
+
+    padding: 12px;
+    box-shadow: 0px 0px 4px 0px;
+    border-radius: 20px;
+    min-height: 671px;
+}
+.text-11{
+
+    font-size: 11px;
+}
+
+.course_text{
+
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 0px;
+    margin-bottom: 14px;
+}
+.fa-star:before{
+
+    font-size: 12px;
+    color: #F8C85B;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.post_Section > img{
+
+    border-radius: 50%;
+}
+
+/* End Tutor Courses*/
+
+/* Student Course */
+
+.requirements_heading h2{
+    font-size: 30px;
+}
+.accept_reqBtn a:hover{
+    color: #ffffff !important;
+}
+.Rewrite_tutor_section h4{
+    font-size: 35px;
+}
+/* End Student Course */
+
+
+/* Home css*/
+
+.home_banner {
+    background-image: url(../images/home_banner.png);
+    min-height: 630px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home_banner_text h1{
+    font-size: 45px;
+}
+.home_banner_text h2{
+    font-size: 70px;
+}
+.home_child_menu{
+    width: 65%;
+}
+.home_child_menu li{
+    width: 20%;
+}
+.home_banner_text{
+    margin-top: 15rem;
+}
+.home_exploreHeading h3{
+    font-size: 40px;
+}
+.home_exploreHeading{
+    font-size: 25px;
+}
+.light_text{
+    color: #707070;
+}
+.explore_offers img{
+    border-radius: 22px;
+}
+.how_itWorks_Text h4{
+    font-size: 29px;
+}
+.become_tutor{
+    margin: 5rem 0;
+}
+.become_tutor{
+    background-image: url('../images/becam_tutor.png');
+    min-height: 414px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.become_tutor{
+    padding: 7rem 1rem 1rem 4rem;
+}
+.become_tutor h5{
+    font-size: 50px;
+    width: 35%;
+}
+.become_tutor p{
+    font-size: 35px;
+}
+.tutor_btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.tutor_btn:hover{
+    color: #fff;
+}
+.experience_tutor h5{
+    font-size: 55px;
+}
+.experience_tutor p{
+    font-size: 40px;
+}
+.expert_tutor h6{
+    font-size: 40px;
+    font-weight: bold;
+}
+.expert_tutor img{
+    border-radius: 22px;
+}
+.slider_main{
+    overflow: hidden;
+}
+.slider_main:after{
+    content: '';
+    background-image: url(../images/left_bg.png);
+    /* min-height: 414px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 70px;
+    width: 60%;
+    height: 100%;
+    left: -395px;
+    z-index: -1;
+}
+.slider_main:before{
+    content: '';
+    background-image: url(../images/right_bg.png);
+    /* min-height: 414px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    width: 60%;
+    height: 100%;
+    right: -300px;
+    z-index: -1;
+}
+.contact_now{
+    margin: 6rem 0;
+}
+.formHeading h6{
+    font-weight: bold;
+}
+.contact_form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
+}
+.contact_form input{
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
+/* End Home css*/
+
+/* Student Order Css*/
+.subject_name{
+    left: 22px;
+    bottom: 0px;
+}
+.student_course_details{
+    border: 1px solid #FF6600;
+    clear: both;
+    overflow: hidden;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.course_detailBtn{
+    padding: 6px 24px;
+    border-radius: 7px;
+}
+.course_detailBtn:hover{
+    color: #fff !important;
+}
+
+.student_multiTabs .nav-tabs .nav-link{
+    border:none;
+    text-align: left;
+}
+.student_multiTabs .nav-tabs{
+    border-bottom: none;
+}
+.student_multiTabs .nav-tabs .nav-item.show .nav-link,.student_multiTabs .nav-tabs .nav-link.active {
+    color: #ff6600 !important;
+}
+/* Student Order Css*/
+
+/*Schedule Css*/
+.schedule_tabs{
+    background-color: #e2e2e2;
+    padding: 5px;
+    border-radius: 100px;
+    width: 40%;
+    margin: 0 auto;
+}
+.schedule_tabs .nav-tabs .nav-item.show .nav-link, .schedule_tabs .nav-tabs .nav-link.active{
+    border-radius: 100px;
+}
+.select_hours{
+    margin-top: 7rem;
+}
+.classesBtn:hover{
+    color: #ffffff !important;
+}
+/*Schedule Css*/
+
+/*Join to Explore Page*/
+.join_banner_overlay{
+    background: rgb(0 0 0 / 40%);
+    overflow: hidden;
+    height: 100%;
+    min-height: 630px;
+    z-index: 2;
+}
+.join_tutor_form input,.join_tutor_form input:focus{
+    background-color: transparent;
+    color: #cecece !important;
+    border-color: #ced4da !important;
+}
+.subject_dropdown .input_search_icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+}
+.subject_dropdown .dropdown-menu{
+    min-width: 34rem;
+}
+.subject_dropdownList{
+    font-size: 18px;
+    border-bottom: 1px solid #cecece;
+}
+input[type="time"]::-webkit-calendar-picker-indicator{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) ;
+}
+.explore_btn {
+    background: #FF6600;
+    color: #fff !important;
+    padding: 8px 30px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+/*Join to Explore Page*/
+
+
+
+
+/*tutor menu*/
+
+.tutor_menu{
+    width: 65%;
+}
+.tutor_menu ul li{
+    width: 100%;
+}
+/*tutor menu*/
+
+/* tutor earning */
+.total_earning{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ced4da;
+}
+.total_earning li:first-child{
+    color: #FF6600;
+}
+.total_earning li:last-child{
+    border-right: none;
+}
+.total_earning li{
+    width: 25%;
+    border-right: 1px solid #ced4da;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+}
+.paymentBtn{
+    border: 1px solid #000;
+    padding: 0px 42px;
+    color: #FF6600 !important;
+    margin-left: 15px;
+}
+.earning_table{
+    box-shadow: 0px 0px 1px 0px;
+    margin-bottom: 3rem;
+}
+/* End tutor earning */
+
+/* tutor upload course*/
+.image-upload img{
+    cursor: pointer;
+}
+.image-upload>input {
+  display: none;
+}
+
+/* tutor upload course*/
+
+.tutor_onlineIcon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cecece;
+    border-radius: 100px;
+    position: absolute;
+    right: 145px;
+    bottom: 0px;
+    background: #fff;
+}
+
+
+/*Footer*/
+.footer{
+    padding: 5rem 0;
+    background-color: #3a3f44;
+}
+.footer-linksMain li a {
+    color: #bbbbbb;    
+}
+.footer-linksMain li a:hover{
+    color: #989292 !important;
+}
+.footer-border{
+    border-right: 1px solid #bbbbbb;
+}
+.contact_details p{
+    color: #bbbbbb;
+    margin-bottom: 0px !important;   
+}
+.footerIcons_link li{
+    margin-right: 10px;
+}
+.footerIcons_link li a{
+    color: #fff !important;
+}
+.mini-footer{
+    background-color: #FF6600;
+}
+.mini-footer a{
+    color: #fff !important;
+}
+
+/*Footer*/
