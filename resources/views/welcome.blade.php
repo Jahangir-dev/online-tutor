@@ -237,9 +237,14 @@
           </div>
           <div class="row">
           @foreach($gigs as $g) 
+
             <div class="col-3 pr-0 mb-5">
               <div class="related_tutors float-left mr-2">
-                <img src="{{$g->image}}" style="width:100%;height: 200px;" alt="home-related" class="img-fluid">
+                  @if (file_exists(public_path('images/images/{{$g->image}}')))
+                 <img src="{{asset('iamges/images/'.$c->image)}}" alt="offer-Image" style=" height: 250px;width: 100%;" class="img-fluid">
+                 @else
+                    <img src="{{asset('no-image.jpg')}}" alt="offer-Image" style=" height: 250px;width: 100%;" class="img-fluid">
+                 @endif
               </div>
               <div class="float-left text_25 mt-3">
                <a href="{{route('teacher-gigs-detail',['id'=>$g->tutor_id])}}"> <p class="text_orange" style="font-size: 22px;">{{$g->users->name}}</p></a>

@@ -67,7 +67,7 @@ class TeacherController extends Controller
 
          'address'=>$request->address,
          'cnic'=>$request->cnic,
-         'image'=> $thumbnail,
+         'image'=> $fileName,
          'about_yourself'=>$request->tell_about_yourselfs,
          'description'=>$request->description,
          'role'=>$teacher,

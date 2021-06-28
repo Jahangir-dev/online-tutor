@@ -121,15 +121,6 @@
 					</a>
 				</li>
 
-				
-
-
-				
-
-				
-
-
-				
 
 				
 				
@@ -141,11 +132,16 @@
 					
 
 					<li class="nav-item">
-					<a href="{{route('logout')}}" class="nav-link ">
+					<a href="{{route('logout')}}" class="nav-link " onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
 						<i class="icon-home4"></i>
 						<span>
 						Logout
 						</span>
+						<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+
 					</a>
 				</li>
 
