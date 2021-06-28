@@ -41,8 +41,8 @@
                <i class="fa fa-user-circle"></i>
                </a>
                <div class="dropdown-menu dropdown-menu-right">
-                  <button class="dropdown-item" type="button">Action</button>
-              <a href="{{route('login')}}" class="dropdown-item">Login</a> 
+                  
+                  <a href="{{route('login')}}" class="dropdown-item">Login</a> 
                 </div>
             </div>
             <div class="child_menu home_child_menu p-0">
@@ -211,7 +211,11 @@
             
                          
                <div class=" text-center">
-                 <img src="{{$c->image}}" alt="offer-Image" style=" height: 250px;width: 100%;" class="img-fluid">
+                @if (file_exists(public_path('images/images/{{$c->image}}')))
+                 <img src="{{asset('iamges/images/'.$c->image)}}" alt="offer-Image" style=" height: 250px;width: 100%;" class="img-fluid">
+                 @else
+                    <img src="{{asset('no-image.jpg')}}" alt="offer-Image" style=" height: 250px;width: 100%;" class="img-fluid">
+                 @endif
                  <p class="font_22">{{$c->name}}</p>
                </div>
 

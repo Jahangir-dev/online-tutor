@@ -60,29 +60,25 @@ class AdminController extends Controller
 
 
   public function add_categories(Request $request)
-  {
+  { 
+        if ($request->hasFile('image')) 
+            {
 
+            $destinationPath = public_path()."/images/images/";
+            $extension =  $request->file('image')->getClientOriginalExtension();
+            $fileName = time();
+            $fileName .= rand(11111,99999).'.'.$extension; // renaming image
+            if(!$request->file('image')->move($destinationPath,$fileName))
+            {
+                throw new \Exception("Failed Upload");                    
+            }
 
+            $thumbnail = asset("/images/images/")."/".$fileName;    
 
-     if ($request->hasFile('image')) 
-                    {
-
-                    $destinationPath = public_path()."/images/images/";
-                    $extension =  $request->file('image')->getClientOriginalExtension();
-                    $fileName = time();
-                    $fileName .= rand(11111,99999).'.'.$extension; // renaming image
-                    if(!$request->file('image')->move($destinationPath,$fileName))
-                    {
-                        throw new \Exception("Failed Upload");                    
-                    }
-
-                    $thumbnail = asset("/images/images/")."/".$fileName;
-                    
-
-                }
-  	   $new=new SubjectCategories();
-    	  $new->name=$request->categories;
-        $new->image=$thumbnail;
+        }
+  	    $new=new SubjectCategories();
+    	$new->name=$request->categories;
+        $new->image=$fileName;
     	$new->save();
     	return redirect()->route('categories-list');
   }
